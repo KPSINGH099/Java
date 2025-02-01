@@ -1,0 +1,24 @@
+char ch = 'A';
+if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+    ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+    System.out.println("Vowel");
+} else {
+    System.out.println("Consonant");
+}
+'
+
+
+
+
+
+count number of digit
+
+Count the number of digits in a number.
+java
+Copy
+int num = 12345;
+int count = 0;
+while (num != 0) {
+    num = num / 10;
+    count++;
+}

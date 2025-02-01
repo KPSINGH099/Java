@@ -1,0 +1,10 @@
+ while (num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+
+
+            int num = 58;
+
+               num /= 10;-----5

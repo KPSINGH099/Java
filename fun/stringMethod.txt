@@ -1,0 +1,3 @@
+String reversed = new StringBuilder(str).reverse().toString();
+
+for (char ch : str.toCharArray())

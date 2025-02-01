@@ -1,0 +1,17 @@
+    
+    //The reason we check up to num / 2 
+    when determining whether a number is prime is based
+     on optimization. The key idea is that if a number
+      num has a divisor larger than num / 2, it 
+      would also have a corresponding divisor smaller than num / 2. 
+      Therefore, checking up to num / 2 is sufficient to determine if 
+      num is divisible by any smaller number other than 1 and itself.
+    
+    
+    boolean isPrime = true;
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
