@@ -1,0 +1,19 @@
+Description: This is the most commonly used implementation of the List interface. 
+It uses a dynamic array to store the elements.
+
+Characteristics:
+Allows duplicate elements.
+Resizable array (automatically grows as more elements are added).
+Random access to elements (i.e., fast get operations).
+Slower insertions and deletions in the middle of the list compared to other implementations.
+
+Performance:
+Access time: O(1) for get() and set().
+Insertion/removal time: O(n) (for adding/removing elements at arbitrary positions).
+
+
+Usage: Suitable when you need fast access to elements by index,
+ 
+ 
+and you are not frequently inserting/removing elements in the middle.
+

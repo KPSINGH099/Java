@@ -1,0 +1,65 @@
+System.out.println("the 3rd index is   "+ list.get(2));
+
+
+
+import java.util.Collections;
+
+Collections.reverse(list);
+
+
+Check if an ArrayList contains a specific element.
+boolean contains = list.contains(2);
+
+Find the Index of an Element in an ArrayList
+int index = list.indexOf(20);
+
+
+ list.remove(1); // Removes element at index 1
+
+
+remove all occurrences of a specific element in the ArrayList.
+
+   list.removeIf(n -> n == 20);  // Remove all 20's
+
+
+Collections.sort(list);
+
+
+Check if two ArrayLists are equal.
+  System.out.println("Are the lists equal? " + list1.equals(list2));
+
+Extract a sublist from an ArrayList.
+ArrayList<Integer> sublist = new ArrayList<>(list.subList(1, 3));  
+
+Replace an element at a specific index in the ArrayList
+list.set(1, 25);  // Replace element at index 1 with 25
+
+Add all elements from one ArrayList to another.
+list1.addAll(list2)
+
+int lastElement = list.get(list.size() - 1);
+System.out.println("Last element: " + lastElement);
+
+
+Clone an ArrayList.
+
+ArrayList<Integer> clonedList = (ArrayList<Integer>) list.clone();
+        System.out.println("Cloned ArrayList: " + clonedList);
+
+Remove all duplicates from an ArrayList.
+
+HashSet<Integer> set = new HashSet<>(list);
+        list.clear();
+        list.addAll(set);
+
+
+Find the second largest element in an ArrayList.
+
+Collections.sort(list);
+int secondLargest = list.get(list.size() - 2);
+System.out.println("Second largest element: " + secondLargest);
+
+
+List<Integer> intersection = new ArrayList<>(list1);
+intersection.retainAll(list2);
+System.out.println("Intersection: " + intersection);
